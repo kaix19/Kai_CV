@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOW KAI XIANG - Modern CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-8">
+    <div class="text-center space-y-2">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">HOW KAI XIANG</h1>
+      <p class="text-sm">Block 856 Tampines Street 82, Singapore 520856</p>
+      <div class="flex flex-col sm:flex-row sm:justify-center sm:gap-6 gap-1 text-sm text-gray-600">
+        <div class="flex items-center gap-2 justify-center">📞 +65 8699 0861</div>
+        <div class="flex items-center gap-2 justify-center">✉️ kaixhow9@gmail.com</div>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">Professional Summary</h2>
+      <p class="leading-relaxed text-sm sm:text-base">
+        Dynamic operations and service professional with 5+ years of experience across F&B,
+        hospitality, and logistics. Proven ability to manage high-pressure environments,
+        coordinate cross-functional teams, and deliver seamless guest experiences. Adept in
+        event operations, vendor management, and process optimization.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">Core Competencies</h2>
+      <div class="flex flex-wrap gap-3">
+        {"".join(f'<span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">{skill}</span>' for skill in [
+          "Event & Operations Management", "Vendor Coordination", "Logistics Planning",
+          "Team Leadership", "Customer Experience", "Budget Control",
+          "On-site Event Support", "Bilingual Communication", "Effective Communication",
+          "Adaptability", "Problem-solving", "Time Management", "Emotional Intelligence",
+          "Attention to Detail", "Conflict Resolution"
+        ])}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">Professional Experience</h2>
+      <div class="space-y-4 text-sm">
+        {"".join([
+          f"<div><h3 class='font-bold text-blue-700'>{exp['title']}</h3><p class='italic text-gray-600'>{exp['company']} | {exp['dates']}</p><ul class='list-disc list-inside mt-1 text-gray-700'>" +
+          "".join(f"<li>{bullet}</li>" for bullet in exp['bullets']) +
+          "</ul></div>"
+          for exp in [
+            {
+              "title": "Diploma in Business & IT Scholarship Intern",
+              "company": "Creative Eateries, Sarai Thai Fine-Dining",
+              "dates": "Feb 2025 – Present",
+              "bullets": [
+                "Internship under the Diploma in Business & Information Technology program.",
+                "Supported event-based restaurant service during high-volume dining periods.",
+                "Maintained accurate inventory, reducing stockouts and waste.",
+                "Assisted in private dining setups and service flow."
+              ]
+            },
+            {
+              "title": "Operations Manager",
+              "company": "SORA, Cove Cafe and Bar",
+              "dates": "Feb 2023 – Nov 2024",
+              "bullets": [
+                "Oversaw operations, staffing, and event nights.",
+                "Coordinated themed event logistics, cutting costs by 15%.",
+                "Standardized setup/teardown processes."
+              ]
+            },
+            {
+              "title": "Bar & Floor Team Member",
+              "company": "Club Yang",
+              "dates": "Apr 2022 – Feb 2023",
+              "bullets": [
+                "Managed guest flow during nightlife events.",
+                "Handled backend logistics and bar inventory."
+              ]
+            },
+            {
+              "title": "Sales Interior Designer",
+              "company": "IDID Pte Ltd",
+              "dates": "Feb 2022 – Apr 2022",
+              "bullets": [
+                "Liaised with clients and vendors during project pitches and showroom events.",
+                "Managed visual presentation and layout for promotional launches."
+              ]
+            },
+            {
+              "title": "Operations Manager",
+              "company": "CNS",
+              "dates": "Dec 2020 – Dec 2021",
+              "bullets": [
+                "Managed resource allocation for equipment setup in event-based environments.",
+                "Streamlined equipment maintenance to reduce on-site delays."
+              ]
+            },
+            {
+              "title": "Team Lead",
+              "company": "SATS",
+              "dates": "Dec 2019 – Dec 2020",
+              "bullets": [
+                "Led ground teams during large-scale airport operations, coordinating logistics in time-sensitive conditions.",
+                "Introduced safety and efficiency protocols that are transferrable to live event scenarios."
+              ]
+            }
+          ]
+        ])}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">Education</h2>
+      <ul class="list-disc list-inside text-sm">
+        <li><strong>Diploma in Business & Information Technology</strong>, Beacon International College (2025 – Present)</li>
+        <li><strong>Nitec in Electronics (Display Technology)</strong>, ITE College East (2016 – 2017)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">Technical Skills</h2>
+      <div class="flex flex-wrap gap-2 text-sm">
+        {"".join(f'<span class="rounded-full px-3 py-1 text-blue-900 border border-blue-300">{skill}</span>' for skill in [
+          "Word", "Excel", "PowerPoint", "Teams", "Canva", "AutoCAD", "Inventory Systems", "Workflow Design Tools", "POS Systems",
+          "NETS", "FASSLink", "Python", "Data Analysis", "Prompt Engineering",
+          "AI-powered Automation", "Hugging Face Transformers", "OpenAI API", "Whisper", "Vector Databases", "English & Mandarin"
+        ])}
+      </div>
+    </section>
+  </div>
+</body>
+</html>
